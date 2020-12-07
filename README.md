@@ -4,9 +4,12 @@ This program displays the states which have cities named "Atlanta", "Houston", "
 
 # Bugs to fix
 
-- [ ] After lots of debugging, code stopped running. `node index.js` does nothing
-- [ ] Started crashing after adding "tampa" search
-- [ ] Prints "Atlanta" locations twice (instead of Houston)
+- [X] After lots of debugging, code stopped running. `node index.js` does nothing
+  - `main()` needed to be uncommented in `index.js`
+- [X] Started crashing after adding "tampa" search
+  - `statesWithCity('tampa')` needed a `db.` prefix
+- [X] Prints "Atlanta" locations twice (instead of Houston)
+  - Changed loop to use `statesWithAHouston` on line 15.
 
 For each bug you fix, add documentation to this README about how you fixed it (include before/after code samples).
 
